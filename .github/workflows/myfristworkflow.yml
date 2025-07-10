@@ -1,0 +1,13 @@
+name: sixoclock
+
+on: push
+
+jobs:
+  wakeup-job:
+    runs-on:  ubuntu-latest
+    steps:
+      - name:  do toothbrush
+        uses:  actions/checkout@v4
+      - run: echo "$(cat README.md)"
+
+        
