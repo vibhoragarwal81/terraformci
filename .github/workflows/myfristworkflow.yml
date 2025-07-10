@@ -11,6 +11,7 @@ jobs:
       - run: echo "$(cat README.md)"
 
   gotoffice:
+    needs: wakeup-job
     runs-on:  ubuntu-latest
     steps:
       - name:  book a taxi
